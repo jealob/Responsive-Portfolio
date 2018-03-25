@@ -163,8 +163,8 @@ footer {
 
 .sidebar {
   float: right;
-  width: 100%;
-  max-width: 270px;
+  width: 270px;
+  max-width: 100%;
   padding: 30px;
   margin-bottom: 20px;
   background: #fff;
@@ -289,16 +289,22 @@ input[type=submit] {
   border: 0 none;
 }
 
-
   /* Media Queries */
 
 /* width less than 980px  */
 @media screen and (max-width: 980px) {
-    /* The body's bg color will be #333 */
-/*   
-.main-section {
-  max-width:50%;
-} */
+.main-section{
+  width:900px;
+  max-width: 100%;
+  margin-left: 20px;
+}
+
+.sidebar {
+  float:left;
+  width:900px;
+  max-width: 100%;
+  margin-left: 20px;
+}
 
 .work {
   width: 100%;
@@ -307,36 +313,54 @@ input[type=submit] {
   /* width: 300px; */
 }
 
+
+
   }
  
 /* width less than 768px  */
 @media screen and (max-width: 768px) {
-  /* The body's bg color will be #333 */
+  .main-section{
+    width:690px;
+    max-width: 100%;
+    margin-left: 20px;
+  }
+  
+  .sidebar {
+    float:left;
+    width:690px;
+    max-width: 100%;
+    margin-left: 20px;
+  }
+  
   .work {
     width: 40%;
     margin: 20px 0 25px;
     overflow:auto;
     /* width: 300px; */
-  }
-  .sidebar {
-    float:left;
-    width:auto;
-    max-width: 270px;
   }
 }
 
 /* width less than 640px  */
 @media screen and (max-width:640px) {
-  /* The body's bg color will be #333 */
-  .work {
-    width: 40%;
-    margin: 20px 0 25px;
-    overflow:auto;
-    /* width: 300px; */
+  #masterhead {
+    position:static;
   }
+  .main-section{
+    width:580px;
+    max-width: auto;
+    margin-left: 20px;
+  }
+  
   .sidebar {
     float:left;
-    width:auto;
-    max-width: 270px;
+    width:580px;
+    max-width: auto;
+    margin-left: 20px;
+  }
+  
+
+  nav a {
+    float:left;
+    margin-top: 25px;
   }
 }
